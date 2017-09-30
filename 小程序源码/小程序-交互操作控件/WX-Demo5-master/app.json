@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+
+    "pages/index/Component/ActionSheet/ActionSheet",
+    "pages/index/Component/AlertAction/AlertAction",
+    "pages/index/Component/SuccessAction/SuccessAction",
+    "pages/index/Component/LoadingAction/LoadingAction"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFF0F5",
+    "navigationBarTitleText": "组件五：交互操作控件",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#fbf9fe"
+  }
+}

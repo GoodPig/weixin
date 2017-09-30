@@ -1,0 +1,20 @@
+<import src="../../components/poi/poi.wxml"/>
+
+<scroll-view scroll-x="true" class="header">
+  <view class="nav">
+    <view class="{{ poiType === 'all' ? 'selected' : ''}}" data-type="all" bindtap="changePOIType">全部</view>
+    <view class="{{ poiType === 'sights' ? 'selected' : ''}}" data-type="sights" bindtap="changePOIType">景点</view>
+    <view class="{{ poiType === 'hotel' ? 'selected' : ''}}" data-type="hotel" bindtap="changePOIType">住宿</view>
+    <view class="{{ poiType === 'restaurant' ? 'selected' : ''}}" data-type="restaurant" bindtap="changePOIType">餐厅</view>
+    <view class="{{ poiType === 'entertainment' ? 'selected' : ''}}" data-type="entertainment" bindtap="changePOIType">休闲娱乐</view>
+    <view class="{{ poiType === 'mall' ? 'selected' : ''}}" data-type="mall" bindtap="changePOIType">购物</view>
+  </view>
+</scroll-view>
+<scroll-view class="list" style="height: {{ windowHeight - 70 / pixelRatio }}px; width: {{ windowWidth }}px;" scroll-y="true"  bindscrolltolower="loadMore" lower-threshold="800">
+  <block wx:for="{{ pois }}" wx:for-item="poi" wx:key="poi.id">
+    <template is="m-poi" data="{{poi: poi}}" />
+  </block>
+  <view wx:if="{{ hasMore }}" class="loading">
+    正在加载...
+  </view>
+</scroll-view>

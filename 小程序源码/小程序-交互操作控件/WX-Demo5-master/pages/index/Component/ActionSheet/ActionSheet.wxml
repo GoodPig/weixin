@@ -1,0 +1,16 @@
+<!--pages/index/Component/ActionSheet/ActionSheet.wxml-->
+<view class="viewTitle">
+    <text class="view-Name">ActionSheet上拉菜单</text>
+    <view class="lineView"></view>
+</view>
+<view class="page">
+    <view class="section section_gap">
+      <button type="default" bindtap="actionSheetTap">弹出action sheet</button>
+      <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+        <block wx:for="{{actionSheetItems}}">
+          <action-sheet-item class="item" bindtap="bind{{item}}">{{item}}</action-sheet-item>
+        </block>
+        <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+      </action-sheet>
+    </view>
+</view>

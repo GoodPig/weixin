@@ -1,0 +1,8 @@
+/**index.wxss**/
+.weui-navbar__item_search {
+  position: relative;
+  display: block;
+  padding: 13px 6px;
+  text-align: center;
+  font-size: 0;
+}

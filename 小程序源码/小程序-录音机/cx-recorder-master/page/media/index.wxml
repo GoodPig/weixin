@@ -1,0 +1,13 @@
+
+<!--page/recorder/index.wxml-->
+<view class="container">
+  <view class="audio">
+    <audio bindpause="defaultPause" bindplay="defaultPlay" poster="{{audioInfo.poster}}" name="{{audioInfo.name}}" author="{{audioInfo.author}}" src="{{audioInfo.src}}" id="myAudio" controls loop></audio>
+    <text></text>
+  </view>
+  
+  <view class="flex-row btn-list">
+    <button type="primary" bindtap="audioPlay">{{play}}</button>
+    <button type="primary" bindtap="audioRepeat">{{repeat}}</button>
+  </view>
+</view>

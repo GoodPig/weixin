@@ -1,0 +1,24 @@
+<!--pages/index/Component/AlertAction/AlertAction.wxml-->
+<view class="viewTitle">
+    <text class="view-Name">AlertAction提示框</text>
+    <view class="lineView"></view>
+</view>
+<view class="page">
+  <view class="page__bd">
+    <modal title="温馨提示" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="modalChange" bindcancel="modalChange">
+      插入你提醒的信息内容
+    </modal>
+
+    <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">
+      <view> 没有标题没有取消的对话框 </view>
+      <view> 可以自定义提示框 </view>
+    </modal>
+
+    <view class="viewName">
+      <button type="default" bindtap="modalTap">点击弹出提示框</button>
+      </view>
+    <view class="viewName">
+      <button type="default" bindtap="modalTap2">点击弹出提示框</button>
+    </view>
+  </view>
+</view>

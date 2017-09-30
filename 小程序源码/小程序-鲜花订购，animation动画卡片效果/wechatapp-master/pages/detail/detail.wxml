@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="hader_wrap">
+    <view class="header_banner">
+      <view class="header_banner_tip content1">
+        「Colourful多彩系列」
+      </view>
+      <image src="../../images/flower.png"></image>
+    </view>
+    <view class="header_goods_mes text-center">
+      <!-- <view class="pull-left col-50 text-right p-r-10 content1 flower_name">混合鲜花</view>
+      <view class="pull-left col-50 text-left p-l-10 content1 flower_name">温暖的时光</view> -->
+      <view class="text-center flower_name">混合鲜花<span></span>温暖的时光</view>
+      <view class="flower_name_tip content2">香槟玫瑰29枝，粉色香水百合3枝，叶上花3枝</view>
+      <view class="flower_price text-green text-center">￥259~299</view>
+      <ul class="flower_advantage clearfix">
+        <li>精致花束包装</li>
+        <li>新鲜空运花材</li>
+        <li>免配送费</li>
+      </ul>
+    </view>
+    <view class="flower_sku_wrap">
+      <text class="sku_name font-p">订购日期</text>
+      <view class="sku_list_wrap">
+        <view class="btn-sku active inline-block">仅此一次</view>
+      </view>
+    </view>
+  </view>
+</view>

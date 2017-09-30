@@ -1,0 +1,64 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.viewTitle{
+    margin-top: 20px;
+    height: 40px;
+    text-align: center;
+}
+.bc_green{
+    background-color: #09BB07;
+}
+.bc_red{
+    background-color: #F76260;
+}
+.bc_blue{
+    background-color: #10AEFF;
+}
+.bc_yellow{
+    background-color: #FFBE00;
+}
+.bc_gray{
+    background-color: #C9C9C9;
+}
+.viewName{
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #EED2EE;
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.section{
+    margin-bottom: 80rpx;
+}
+.section_gap{
+    padding: 0 30rpx;
+}
+.section__title{
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.section_gap .section__title{
+    padding-left: 0;
+    padding-right: 0;
+}
+.lineView{
+  margin-top: 1px;
+  margin-left: 80px;
+  margin-right: 80px; 
+  height: 1px;
+  background-color: darkred;
+}

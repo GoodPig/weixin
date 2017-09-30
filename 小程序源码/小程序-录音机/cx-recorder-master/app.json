@@ -1,0 +1,43 @@
+{
+    "pages": [
+        "page/recorder/index",
+        "page/index/index",
+        "page/media/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#00A65A",
+        "navigationBarTitleText": "录音机",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [{
+            "pagePath": "page/index/index",
+            "iconPath": "image/home.png",
+            "selectedIconPath": "image/home_se.png",
+            "text": "首页"
+        }, {
+            "pagePath": "page/recorder/index",
+            "iconPath": "image/punchteam.png",
+            "selectedIconPath": "image/punchteam_se.png",
+            "text": "录音"
+        }, {
+            "pagePath": "page/media/index",
+            "iconPath": "image/icon.png",
+            "selectedIconPath": "image/icon_se.png",
+            "text": "音频"
+        }]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "debug": false
+}
