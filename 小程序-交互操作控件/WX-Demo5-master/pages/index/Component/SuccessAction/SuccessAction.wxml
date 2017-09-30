@@ -1,0 +1,19 @@
+<!--pages/index/Component/SuccessAction/SuccessAction.wxml-->
+<view class="viewTitle">
+    <text class="view-Name">SuccessAction完成框</text>
+    <view class="lineView"></view>
+</view>
+<view class="page">
+      <view class="viewName">
+        <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+          默认
+        </toast>
+        <button type="default" bindtap="toast1Tap">点击弹出默认完成</button>
+      </view>
+      <view class="viewName">
+        <toast hidden="{{toast2Hidden}}" duration="3000" bindchange="toast2Change">
+          自定义消失时间
+        </toast>
+        <button type="default" bindtap="toast2Tap">点击弹出自定义消失时间的完成</button>
+      </view>
+</view>

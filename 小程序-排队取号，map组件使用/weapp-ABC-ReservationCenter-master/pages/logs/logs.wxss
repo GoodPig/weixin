@@ -1,0 +1,10 @@
+image{
+  width:100%;
+}
+text{
+  margin: 20rpx;
+  display: block;
+}
+.distance{
+  color: gray;
+}

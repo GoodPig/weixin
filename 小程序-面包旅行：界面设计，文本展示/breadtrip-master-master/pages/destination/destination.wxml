@@ -1,0 +1,36 @@
+<import src="../../components/widget/rating.wxml"/>
+
+<view class="header">
+  <image style="width: {{ windowWidth }}px;" src="{{ info.hottest_places[0].photo }}" mode="aspectFill"></image>
+  <view class="title">
+    <view class="h1">{{ info.name_zh }}</view>
+    <view class="detail">{{ info.visited_count }}去过  /  {{ info.wish_to_go_count }}喜欢</view>
+  </view>
+  <view class="photo"></view>
+  <view class="mask"></view>
+</view>
+<view class="nav">
+  <image bindtap="viewPOIList" src="../../images/destination/pois.png"></image>
+  <image bindtap="viewTripList" src="../../images/destination/trips.png"></image>
+</view>
+<view wx:if="{{ pois }}" class="place">
+  <view class="h2">
+    <image src="../../images/destination/divide_l.png"></image>
+    <text>热门地点</text>
+    <image src="../../images/destination/divide_r.png"></image>
+  </view>
+  <view class="list">
+    <view wx:for="{{ pois }}" wx:for-item="poi" class="poi" wx:key="poi.id">
+      <image src="{{ poi.cover_s }}" mode="aspectFill"></image>
+      <view class="info">
+        <view class="title">{{ poi.name }}</view>
+        <view class="rating">
+          <template is="m-rating" data="{{count: poi.rating, size: 's'}}"/>
+          <view class="count">{{ poi.rating_users }}人点评</view>
+        </view>
+      </view>
+      <view class="mask"></view>
+    </view>
+  </view>
+  <view class="all" bindtap="viewPOIList">全部热门地点</view>
+</view>

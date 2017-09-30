@@ -1,0 +1,13 @@
+<!--pages/index/Component/LoadingAction/LoadingAction.wxml-->
+<view class="viewTitle">
+    <text class="view-Name">LoadingAction加载框</text>
+    <view class="lineView"></view>
+</view>
+<view class="page">
+      <view class="viewName">
+        <loading hidden="{{hidden}}" bindchange="loadingChange">
+          加载中...
+        </loading>
+        <button type="default" bindtap="loadingTap">点击弹出loading</button>
+      </view>
+</view>

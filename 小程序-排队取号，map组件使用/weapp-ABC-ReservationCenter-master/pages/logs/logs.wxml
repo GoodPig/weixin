@@ -1,0 +1,6 @@
+<!--logs.wxml-->
+<view>
+  <image mode="aspectFill" src="{{src}}"></image>
+  <text>{{address}}</text>
+  <text class="distance">{{distance}}</text>
+</view>

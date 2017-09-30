@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="viewName" style="margin-top: 60px;">
+  <navigator url="Component/ActionSheet/ActionSheet">
+    <text class="view-Name">ActionSheet上拉菜单</text>
+  </navigator>
+</view>
+
+<view class="viewName" style="margin-top: 60px;">
+  <navigator url="Component/AlertAction/AlertAction">
+    <text class="view-Name">AlertAction提示框</text>
+  </navigator>
+</view>
+
+<view class="viewName" style="margin-top: 60px;">
+  <navigator url="Component/SuccessAction/SuccessAction">
+    <text class="view-Name">SuccessAction完成框</text>
+  </navigator>
+</view>
+
+<view class="viewName" style="margin-top: 60px;">
+  <navigator url="Component/LoadingAction/LoadingAction">
+    <text class="view-Name">LoadingAction加载框</text>
+  </navigator>
+</view>
